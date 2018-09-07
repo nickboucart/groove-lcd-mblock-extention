@@ -1,10 +1,10 @@
 {	"extensionName": "Grove LCD (Arduino Mode Only)",
-  "description": "Some blocks to work with the I2C display in the grove seeed kit",
+  "description": "Some blocks to work with the RGB LCD in the grove seeed kit",
 	"sort":0,
-	"version": "1.0",
+	"version": "1.0.1",
 	"javascriptURL":"js/dummy.js",
 	"author": "Nick Boucart (@nickboucart)",
-	"homepage": "https://github.com/nickboucart/groove-lcd-mblock-extention",
+	"homepage": "https://github.com/nickboucart/grove-lcd-mblock-extention",
     "firmware":"1.0",
     "extensionPort":0,
 	"blockSpecs": [

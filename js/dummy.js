@@ -13,6 +13,8 @@
 	};
   ext.LCDClearScreen = function(){
 	};
+	ext.LCDUse = function(){
+	};
 
 var descriptor = {};
 	ScratchExtensions.register('Grove LCD (Arduino Mode Only)', descriptor, ext, {type: 'serial'});

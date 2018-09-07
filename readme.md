@@ -1,4 +1,4 @@
-A small mblock extension for the groove RGB failed
+A small mblock extension for the groove RGB LCD
 ==================================================
 
 This is a small mblock extention to enable the groove RGB LCD in mblock, made to support our actitivites in [CoderDojo Belgium](https://www.coderdojobelgium.be/).

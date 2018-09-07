@@ -3,13 +3,14 @@
 
 (function(ext) {
 
+	ext.resetAll = function(){};
 
 	ext.doArduino = function(){
 	};
 
-  ext.LCDSetText = function(){
+  ext.LCDSetText = function(t){
 	};
-  ext.LCDSetRGB = function(){
+  ext.LCDSetRGB = function(r,g,b){
 	};
   ext.LCDClearScreen = function(){
 	};
@@ -17,5 +18,5 @@
 	};
 
 var descriptor = {};
-	ScratchExtensions.register('Grove LCD (Arduino Mode Only)', descriptor, ext, {type: 'serial'});
+	ScratchExtensions.register('grove lcd', descriptor, ext, {type: 'serial'});
 })({});

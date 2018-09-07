@@ -1,0 +1,79 @@
+{	"extensionName": "Grove LCD (Arduino Mode Only)",
+  "description": "Some blocks to work with the I2C display in the grove seeed kit",
+	"sort":0,
+	"version": "1.0",
+	"javascriptURL":"js/dummy.js",
+	"author": "Nick Boucart (@nickboucart)",
+	"homepage": "https://github.com/nickboucart/groove-lcd-mblock-extention",
+    "firmware":"1.0",
+    "extensionPort":0,
+	"blockSpecs": [
+	[
+		"w",
+		"use LCD",
+		"LCDUse",
+		{
+			"setup":"lcd.begin(16, 2);\n lcd.setRGB(0,0,0);\n",
+			"inc":"#include \"rgb_lcd.h\"",
+			"def":"rgb_lcd lcd;\n",
+			"work":"",
+			"loop":""
+		}
+	],
+		[
+			"w",
+			"LCD set text %s",
+			"LCDSetText",
+			"Hello",
+			{
+				"setup":"",
+				"inc":"",
+				"def":"",
+				"work":"lcd.print({0});\n",
+				"loop":""
+			}
+		],
+		[
+			"w",
+			"LCD set background color (red, green, blue) %d %d %d",
+			"LCDSetRGB",
+			0,
+			0,
+			0,
+			{
+				"setup":"",
+				"inc":"",
+				"def":"",
+				"work":"lcd.setRGB({0}, {1}, {2});\n",
+				"loop":""
+			}
+		],
+		[
+			"w",
+			"LCD clear screen",
+			"LCDClearScreen",
+
+			{
+				"setup":"",
+				"inc":"",
+				"def":"",
+				"work":"lcd.clear();\n",
+				"loop":""
+			}
+		]
+	],
+	"menus": {
+
+	},
+	"values":{
+	},
+	"translators":{
+	"nl_NL" : {
+  "LCD clear screen": "LCD maak scherm leeg",
+	"LCD set background color (red, green, blue) %d %d %d": "LCD verander achtergrondkleur (rood, groen, blauw) %d %d %d",
+	"use LCD": "gebruik LCD scherm",
+	"LCD set text %s": "LCD toon tekst %s"
+
+	}
+	}
+}
